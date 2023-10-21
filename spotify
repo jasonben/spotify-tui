@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+docker volume create spotify 1>/dev/null 2>/dev/null
+docker run -it --rm -v spotify:/root/.config/spotify-tui jasonben/spotify-tui
